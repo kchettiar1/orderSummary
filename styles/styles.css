@@ -1,0 +1,30 @@
+/* Frontend Mentor Styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  /* Colors */
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --neutral-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+
+  /* Typography */
+  --bodyText-font: 'Red Hat Display', sans-serif;
+  --bodyText-size: 16px;
+  --bodyText-medium: 500;
+  --bodyText-bold: 700;
+  --bodyText-thick: 900;
+}
+
+/* DEVICES SIZES */
+/* Mobile: 375px */
+/* Desktop: 1440px */
+
+/* local styles  */
