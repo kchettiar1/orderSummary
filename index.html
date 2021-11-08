@@ -9,8 +9,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <!-- Normalise -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Generics Stylesheet -->
+  <link rel="stylesheet" href="/styles/generics.css">
+
   <!-- Local Stylesheet -->
   <link rel="stylesheet" href="/styles/styles.css">
 
@@ -26,33 +31,34 @@
 
 <body>
 
-  <section class="card card-wrapper">
+  <main class="card card-wrapper">
 
-   <div class="hero-image-wrapper">
-      <img class="hero-img" src="/images/illustration-hero.svg" alt="listening to music illustration">
-  </div>
+    <section class="hero-image-wrapper">
+      <img class="hero-img" src="/images/illustration-hero.svg" alt="person listening to music illustration">
+    </section>
 
-   <div class="hero-txt-wrapper">
-     <h1 class="hero-txt-header">Order Summary</h1>
-     <p class="hero-txt-body">You can now listen to millions of songs, audiobooks, and podcasts on any
-     device anywhere you like!</p>
-    </div>
+    <section class="hero-txt-wrapper">
+      <h1 class="hero-txt-header">Order Summary</h1>
+      <p class="hero-txt-body">You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+    </section>
 
-    <div class="subcription-section">
-      <div class="subcription-plan">
-        <img src="/images/icon-music.svg" alt="icon of a music note">
+    <section class="subscription-wrapper">
+      <div class="subscription-icon"><img class="icon" src="/images/icon-music.svg" alt="icon of a musical note"></div>
+      <div class="subscription-plan">
         <h2>Annual Plan</h2>
         <p>$59.99/year</p>
       </div>
-      <a class="subscription-change" href="#">Change</a>
-    </div>
+      <div class="subscription-change"><a href="#">Change</a></div>
+    </section>
 
-    <div class="cta">
+
+    <section class="cta-wrapper">
       <button class="btn btn-pay">Proceed to Payment</button>
       <button class="btn btn-cancel">Cancel Order</button>
-    </div>
+    </section>
 
-  </section>
+  </main>
 
 
   <div class="attribution">
