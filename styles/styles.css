@@ -19,7 +19,6 @@
   --shadow--card-color: hsla(0, 0%, 0%, 0.5);
   --shadow-btn-color: hsl(245, 75%, 52%, 0.2);
 
-
   /* Typography */
   --bodyText-font: 'Red Hat Display', sans-serif;
   --bodyText-header: 1.375rem;
@@ -51,16 +50,15 @@ body {
   box-shadow: 0 20px 20px var(--shadow-card-color);
   border-radius: 25px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .hero-img {
-    width: calc(375px - 3.125rem);
-    border-radius: 25px 25px 0 0;
-    margin-block-end: 2rem;
+  width: calc(375px - 3.125rem);
+  border-radius: 25px 25px 0 0;
+  margin-block-end: 2rem;
 }
 
 .hero-txt-wrapper {
@@ -84,23 +82,47 @@ body {
   text-align: center;
 }
 
-.subscription-section {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin-block-start: 1.5rem; */
-  /* margin-block-end: 1.5rem; */
-  /* margin-inline-start: 1.5rem; */
+.subscription-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.5rem;
+  margin-inline-start: 1.5rem;
+  margin-inline-end: 1.5rem;
+  /* background: var(--neutral-pale-blue); */
+  background-color: #f8f9fe;
+}
+
+.subscription-icon {
   /* margin-inline-end: 1.5rem; */
-  background: var(--neutral-pale-blue);
+  padding: 0 1.5rem 0 1.5rem;
+  width: 4.8rem;
 }
 
-.subcription-plan h2 {
-  font-size: var(--bodyText-paragraph);
+.subscription-plan {
+  border: 1px solid black;
+}
+
+.subscription-plan h2 {
+  font-size: 2.2rem;
   margin: 0;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.2rem;
 }
 
-.cta {
+.subscription-plan p {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-block-end: 1.6rem;
+}
+
+.subscription-change {
+  border: 1px solid black;
+  padding: 0 1.5rem 0 4.1rem;
+}
+
+.cta-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,4 +145,3 @@ body {
   border: none;
   background: none;
 }
-
