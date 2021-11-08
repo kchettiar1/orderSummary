@@ -1,5 +1,6 @@
 /* Frontend Mentor Styles */
 .attribution {
+  margin-block-start: 1rem;
   font-size: 11px;
   text-align: center;
 }
@@ -9,15 +10,20 @@
 
 :root {
   /* Colors */
-  --primary-pale-blue: hsl(225, 100%, 94%);
-  --primary-bright-blue: hsl(245, 75%, 52%);
-  --neutral-pale-blue: hsl(225, 100%, 98%);
-  --neutral-desaturated: hsl(224, 23%, 55%);
-  --neutral-dark-blue: hsl(223, 47%, 23%);
+  --primary-pale-blue: hsla(225, 100%, 94%, 1);
+  --primary-bright-blue: hsl(245, 75%, 52%, 1);
+  --primary-white: hsla(0, 0%, 100%, 1);
+  --neutral-pale-blue: hsla(225, 100%, 98%, 1);
+  --neutral-desaturated: hsla(224, 23%, 55%, 1);
+  --neutral-dark-blue: hsla(223, 47%, 23%, 1);
+  --shadow--card-color: hsla(0, 0%, 0%, 0.5);
+  --shadow-btn-color: hsl(245, 75%, 52%, 0.2);
+
 
   /* Typography */
   --bodyText-font: 'Red Hat Display', sans-serif;
-  --bodyText-size: 16px;
+  --bodyText-header: 1.375rem;
+  --bodyText-paragraph: 16px;
   --bodyText-medium: 500;
   --bodyText-bold: 700;
   --bodyText-thick: 900;
@@ -28,3 +34,93 @@
 /* Desktop: 1440px */
 
 /* local styles  */
+body {
+  margin: 0;
+  max-width: 375px;
+  margin: 0 auto;
+  background: var(--primary-pale-blue);
+  font-family: var(--bodyText-font);
+}
+
+.card {
+  margin-block-start: 4.375rem;
+  margin-block-end: 4.375rem;
+  margin-inline-start: 1.5rem;
+  margin-inline-end: 1.5rem;
+  background: var(--primary-white);
+  box-shadow: 0 20px 20px var(--shadow-card-color);
+  border-radius: 25px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero-img {
+    width: calc(375px - 3.125rem);
+    border-radius: 25px 25px 0 0;
+    margin-block-end: 2rem;
+}
+
+.hero-txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-txt-header {
+  font-size: var(--bodyText-header);
+  margin: 0;
+  margin-block-end: 1rem;
+}
+
+.hero-txt-body {
+  margin: 0;
+  padding: 0 1.3125rem 0 1.3125rem;
+  font-size: var(--bodyText-paragraph);
+  font-weight: var(--bodyText-bold);
+  text-align: center;
+}
+
+.subscription-section {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-block-start: 1.5rem; */
+  /* margin-block-end: 1.5rem; */
+  /* margin-inline-start: 1.5rem; */
+  /* margin-inline-end: 1.5rem; */
+  background: var(--neutral-pale-blue);
+}
+
+.subcription-plan h2 {
+  font-size: var(--bodyText-paragraph);
+  margin: 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 1.25rem;
+  margin-block-end: 2.25rem;
+}
+
+.btn-pay {
+  margin-block-end: 1.5rem;
+  padding: 0.8125rem 4.065rem;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 14px 20px var(--shadow-btn-color);
+  background: var(--primary-bright-blue);
+  color: var(--primary-white);
+}
+
+.btn-cancel {
+  border: none;
+  background: none;
+}
+
