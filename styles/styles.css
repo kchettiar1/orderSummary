@@ -1,13 +1,3 @@
-/* Frontend Mentor Styles */
-.attribution {
-  margin-block-start: 1rem;
-  font-size: 1.1rem;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 :root {
   /* Colors */
   --primary-pale-blue: hsla(225, 100%, 94%, 1);
@@ -20,12 +10,14 @@
   --neutral-dark-blue: hsla(223, 47%, 23%, 1);
   --shadow--card-color: hsla(0, 0%, 0%, 0.5);
   --shadow-btn-color: hsla(245, 75%, 52%, 0.2);
-  --primary-hover: hsla(245, 83%, 68%,1);
+  --primary-hover: hsla(245, 83%, 68%, 1);
 
   /* Typography */
   --bodyText-font: 'Red Hat Display', sans-serif;
   --bodyText-header: 2.2rem;
+  --bodyText-header-d: 2.8rem;
   --bodyText-paragraph: 1.6rem;
+  --bodyText-paragraph-d: 1.6rem;
   --bodyText-medium: 500;
   --bodyText-bold: 700;
   --bodyText-thick: 900;
@@ -36,6 +28,7 @@
 /* Desktop: 1440px */
 
 /* local styles  */
+/* Body */
 body {
   margin: 0;
   max-width: 375px;
@@ -48,14 +41,14 @@ body {
   font-family: var(--bodyText-font);
 }
 
-@media screen and (min-width: 1339px) {
+@media screen and (min-width: 376px) {
   body {
     background-image: url(/images/pattern-background-desktop.svg);
+    max-width: 500px;
   }
-  
 }
 
-
+/* Main Card */
 .card {
   margin-block-start: 7rem;
   margin-block-end: 7rem;
@@ -70,6 +63,14 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 1440px) {
+  .card {
+    margin-block-start: 10rem;
+    margin-block-end: 10rem;
+  }
+}
+
+/* Hero Section */
 .hero-img {
   width: calc(375px - 3.25rem);
   border-radius: 25px 25px 0 0;
@@ -95,15 +96,32 @@ body {
   padding: 0 2rem 0 2rem;
   font-size: var(--bodyText-paragraph);
   font-weight: var(--bodyText-bold);
+  line-height: 2.6rem;
   color: var(--secondary-text);
   text-align: center;
 }
 
+@media screen and (min-width: 1440px) {
+  .hero-img {
+    width: calc(1440px - 3.25rem);
+    border-radius: 25px 25px 0 0;
+    margin-block-end: 4.7rem;
+  }
+  .hero-txt-header {
+    font-size: var(--bodyText-header-d);
+  }
+
+  .hero-txt-body {
+    padding: 0 7rem 0 7rem;
+    font-size: var(--bodyText-paragraph-d);
+  }
+}
+
+/* Subscription Section */
 .subscription-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block-end: 1.5rem;
   margin-inline-start: 2.5rem;
   margin-inline-end: 2.5rem;
   margin-block-end: 2.5rem;
@@ -124,12 +142,13 @@ body {
   width: 12.2rem;
   text-align: left;
   padding: 1.5rem 0 1.6rem 0;
+  line-height: 2.6rem;
 }
 
 .subscription-plan h2 {
   font-size: 1.4rem;
+  font-weight: var(--bodyText-bold);
   margin: 0;
-  padding-bottom: 1rem;
 }
 
 .subscription-plan p {
@@ -145,13 +164,44 @@ body {
 
 .subscription-change a {
   text-decoration: underline;
-  color:var(--primary-bright-blue);
+  color: var(--primary-bright-blue);
 }
 .subscription-change a:hover {
   text-decoration: none;
   /* color:var(--primary-bright-blue); */
 }
 
+@media screen and (min-width: 1440px) {
+  .subscription-wrapper {
+    height: 100px;
+    margin-block-end: 3.3rem;
+  }
+
+  .subscription-icon {
+    padding-left: 2.4rem;
+    padding-right: 0;
+    width: 8rem;
+  }
+
+  .subscription-icon .icon {
+    width: 5rem;
+  }
+
+  .subscription-plan {
+    width: 20.7rem;
+    text-align: left;
+    padding-left: 2rem;
+  }
+  .subscription-plan h2 {
+    font-size: 1.6rem;
+  }
+  
+  .subscription-plan p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Call to Action  */
 .cta-wrapper {
   display: flex;
   flex-direction: column;
@@ -182,7 +232,26 @@ body {
   color: var(--secondary-text);
   font-size: 1.6rem;
   font-weight: var(--bodyText-bold);
+  line-height: 2.6rem;
 }
 .btn-cancel:hover {
   color: initial;
+}
+@media screen and (min-width: 1440px) {
+  .cta-wrapper {
+    margin-block-start: 0rem;
+    margin-block-end: 5rem;
+  }
+  .btn-pay {
+    margin-block-end: 3.35rem;
+}
+
+/* Frontend Mentor Styles for Attribution */
+.attribution {
+  margin-block-start: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
