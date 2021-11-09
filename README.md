@@ -18,8 +18,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Author](#author)
   - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -46,27 +44,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
-1. Initialise github repo.
+1. Initialised github repo.
 2. Folder/files: initialise HTML/CSS/JS folder & files.
 3. HTML: link relevant fonts. | CSS: setup css root variables.
 4. Coded the mobile view layout.
+   <!-- Rethink this section | How did I approach this - break the design down | created figma files | look at what I would use? | etc -->
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- (Used Figma for the design?!)
 
   **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+1. Perhaps use CSS variables on bigger projects.
+   
+   Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
 
@@ -108,8 +106,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Website - [kchettiar.com](https://www.kchettiar.com/)
 - Frontend Mentor - [@kchettiar1](https://www.frontendmentor.io/profile/kchettiar1)
 - Twitter - [@kchettiar1](https://twitter.com/kchettiar1)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
