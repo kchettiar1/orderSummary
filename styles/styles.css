@@ -19,7 +19,8 @@
   --neutral-desaturated: hsla(224, 23%, 55%, 1);
   --neutral-dark-blue: hsla(223, 47%, 23%, 1);
   --shadow--card-color: hsla(0, 0%, 0%, 0.5);
-  --shadow-btn-color: hsl(245, 75%, 52%, 0.2);
+  --shadow-btn-color: hsla(245, 75%, 52%, 0.2);
+  --primary-hover: hsla(245, 83%, 68%,1);
 
   /* Typography */
   --bodyText-font: 'Red Hat Display', sans-serif;
@@ -38,10 +39,22 @@
 body {
   margin: 0;
   max-width: 375px;
+  height: auto;
   margin: 0 auto;
   background: var(--primary-pale-blue);
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
   font-family: var(--bodyText-font);
 }
+
+@media screen and (min-width: 1339px) {
+  body {
+    background-image: url(/images/pattern-background-desktop.svg);
+  }
+  
+}
+
 
 .card {
   margin-block-start: 7rem;
@@ -122,11 +135,21 @@ body {
 .subscription-plan p {
   font-size: 1.4rem;
   margin: 0;
+  color: var(--secondary-text);
 }
 
 .subscription-change {
   font-size: 1.4rem;
   width: 7.3rem;
+}
+
+.subscription-change a {
+  text-decoration: underline;
+  color:var(--primary-bright-blue);
+}
+.subscription-change a:hover {
+  text-decoration: none;
+  /* color:var(--primary-bright-blue); */
 }
 
 .cta-wrapper {
@@ -141,10 +164,15 @@ body {
 .btn-pay {
   margin-block-end: 1.5rem;
   padding: 0.8125rem 4.065rem;
-  border-radius: 15px;
+  border-radius: 10px;
   border: none;
   box-shadow: 0px 14px 20px var(--shadow-btn-color);
   background: var(--primary-bright-blue);
+  color: var(--primary-white);
+}
+
+.btn-pay:hover {
+  background: var(--primary-hover);
   color: var(--primary-white);
 }
 
@@ -154,4 +182,7 @@ body {
   color: var(--secondary-text);
   font-size: 1.6rem;
   font-weight: var(--bodyText-bold);
+}
+.btn-cancel:hover {
+  color: initial;
 }
