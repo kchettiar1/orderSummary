@@ -72,7 +72,7 @@ body {
 
 /* Hero Section */
 .hero-img {
-  width: calc(375px - 3.25rem);
+  width: 100%;
   border-radius: 25px 25px 0 0;
   margin-block-end: 3.4rem;
 }
@@ -102,11 +102,6 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
-  .hero-img {
-    width: calc(1440px - 3.25rem);
-    border-radius: 25px 25px 0 0;
-    margin-block-end: 4.7rem;
-  }
   .hero-txt-header {
     font-size: var(--bodyText-header-d);
   }
@@ -239,11 +234,12 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .cta-wrapper {
-    margin-block-start: 0rem;
+    margin-block-start: 0;
     margin-block-end: 5rem;
   }
   .btn-pay {
     margin-block-end: 3.35rem;
+  }
 }
 
 /* Frontend Mentor Styles for Attribution */
