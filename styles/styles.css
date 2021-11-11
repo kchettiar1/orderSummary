@@ -1,34 +1,37 @@
 :root {
-  /* Colors */
+  /* COLOURS */
   --primary-pale-blue: hsla(225, 100%, 94%, 1);
   --secondary-pale-blue: hsla(225, 100%, 94%, 0.5);
   --primary-bright-blue: hsl(245, 75%, 52%, 1);
-  --primary-white: hsla(0, 0%, 100%, 1);
-  --secondary-text: hsla(244, 7%, 55%, 1);
-  --neutral-pale-blue: hsla(225, 100%, 98%, 1);
-  --neutral-desaturated: hsla(224, 23%, 55%, 1);
-  --neutral-dark-blue: hsla(223, 47%, 23%, 1);
-  --shadow--card-color: hsla(0, 0%, 0%, 0.5);
-  --shadow-btn-color: hsla(245, 75%, 52%, 0.2);
+  --primary-white: hsla(225, 100%, 98%, 1);
   --primary-hover: hsla(245, 83%, 68%, 1);
 
-  /* Typography */
+  --primary-text: hsla(223, 47%, 23%, 1);
+  --secondary-text: hsla(224, 23%, 55%, 1);
+
+  --shadow-card-color: hsla(0, 0%, 0%, 0.5);
+  --shadow-btn-color: hsla(245, 75%, 52%, 0.2);
+
+  /* TYPOGRAPHY */
   --bodyText-font: 'Red Hat Display', sans-serif;
-  --bodyText-header: 2.2rem;
+
+  /* mobile font size */
+  --bodyText-header-m: 2.2rem;
+  --bodyText-paragraph-m: 1.6rem;
+
+  /* desktop font size */
   --bodyText-header-d: 2.8rem;
-  --bodyText-paragraph: 1.6rem;
   --bodyText-paragraph-d: 1.6rem;
+
+  /* font weights */
+  --bodyText-thick: 900;
   --bodyText-medium: 500;
   --bodyText-bold: 700;
-  --bodyText-thick: 900;
 }
 
-/* DEVICES SIZES */
-/* Mobile: 375px */
-/* Desktop: 1440px */
+/* LOCAL STYLES */
 
-/* local styles  */
-/* Body */
+/* BODY */
 body {
   margin: 0;
   max-width: 375px;
@@ -48,7 +51,7 @@ body {
   }
 }
 
-/* Main Card */
+/* MAIN CARD*/
 .card {
   margin-block-start: 7rem;
   margin-block-end: 7rem;
@@ -63,6 +66,7 @@ body {
   align-items: center;
 }
 
+/* Media Query Main Card Desktop Layout*/
 @media screen and (min-width: 1440px) {
   .card {
     margin-block-start: 10rem;
@@ -70,13 +74,15 @@ body {
   }
 }
 
-/* Hero Section */
+/* HERO SECTION */
+/* Hero Image */
 .hero-img {
   width: 100%;
   border-radius: 25px 25px 0 0;
   margin-block-end: 3.4rem;
 }
 
+/* Hero Text */
 .hero-txt-wrapper {
   display: flex;
   flex-direction: column;
@@ -86,21 +92,23 @@ body {
 }
 
 .hero-txt-header {
-  font-size: var(--bodyText-header);
-  font-weight: var(--bodyText-thick);
   margin: 0;
   margin-block-end: 1.7rem;
+  font-size: var(--bodyText-header-m);
+  font-weight: var(--bodyText-thick);
+  color: var(--primary-text);
 }
 
 .hero-txt-body {
   padding: 0 2rem 0 2rem;
-  font-size: var(--bodyText-paragraph);
+  font-size: var(--bodyText-paragraph-m);
   font-weight: var(--bodyText-bold);
+  text-align: center;
   line-height: 2.6rem;
   color: var(--secondary-text);
-  text-align: center;
 }
 
+/* Media Query Hero Desktop Layout */
 @media screen and (min-width: 1440px) {
   .hero-txt-header {
     font-size: var(--bodyText-header-d);
@@ -112,7 +120,8 @@ body {
   }
 }
 
-/* Subscription Section */
+/* SUBSCRIPTION*/
+/* Subscription Wrapper */
 .subscription-wrapper {
   display: flex;
   justify-content: center;
@@ -124,6 +133,7 @@ body {
   background: var(--secondary-pale-blue);
 }
 
+/* Subscription Icon */
 .subscription-icon {
   padding: 0 1.5rem 0 1.7rem;
   width: 8rem;
@@ -133,10 +143,12 @@ body {
   width: 4.8rem;
 }
 
+/* Subscritpion Plan */
 .subscription-plan {
   width: 12.2rem;
-  text-align: left;
   padding: 1.5rem 0 1.6rem 0;
+  color: var(--primary-text);
+  text-align: left;
   line-height: 2.6rem;
 }
 
@@ -166,12 +178,15 @@ body {
   /* color:var(--primary-bright-blue); */
 }
 
+/* Media Query Subscription Desktop Layout */
 @media screen and (min-width: 1440px) {
+  /* Subscription Wrapper */
   .subscription-wrapper {
     height: 100px;
     margin-block-end: 3.3rem;
   }
 
+  /* Subscription Icon */
   .subscription-icon {
     padding-left: 2.4rem;
     padding-right: 0;
@@ -182,6 +197,7 @@ body {
     width: 5rem;
   }
 
+  /* Subscritpion Plan */
   .subscription-plan {
     width: 20.7rem;
     text-align: left;
@@ -190,13 +206,14 @@ body {
   .subscription-plan h2 {
     font-size: 1.6rem;
   }
-  
+
   .subscription-plan p {
     font-size: 1.6rem;
   }
 }
 
-/* Call to Action  */
+/* CALL TO ACTION (CTA) */
+/* CTA Wrapper */
 .cta-wrapper {
   display: flex;
   flex-direction: column;
@@ -230,8 +247,10 @@ body {
   line-height: 2.6rem;
 }
 .btn-cancel:hover {
-  color: initial;
+  color: var(--primary-text);
 }
+
+/* Media Query CTA Desktop Layout */
 @media screen and (min-width: 1440px) {
   .cta-wrapper {
     margin-block-start: 0;
@@ -242,7 +261,7 @@ body {
   }
 }
 
-/* Frontend Mentor Styles for Attribution */
+/* FRONTEND MENTOR ATTRIBUTION */
 .attribution {
   margin-block-start: 1rem;
   font-size: 1.1rem;

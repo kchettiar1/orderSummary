@@ -9,14 +9,14 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
+      - [Mobile 375px](#mobile-375px)
+      - [Desktop 1440px](#desktop-1440px)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
     - [Continued development](#continued-development)
-    - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -28,27 +28,31 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Mobile 375px
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![Mobile](/images/375pxMobile.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+#### Desktop 1440px
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Desktop](/images/1440pxDesktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://ordersummary-kc.netlify.app/)
+- Solution URL: [Order Summary Challenge](https://ordersummary-kc.netlify.app/)
 
 ## My process
 
-1. Initialised github repo.
-2. Folder/files: initialise HTML/CSS/JS folder & files.
-3. HTML: link relevant fonts. | CSS: setup css root variables.
-4. Coded the mobile view layout.
-   <!-- Rethink this section | How did I approach this - break the design down | created figma files | look at what I would use? | etc -->
+1. Analysed the design and put together list of elements that need to be coded.
+2. Ordered the list working on the assumption that some items needed to be worked before others as it affected how other elements needed to be coded. A main consideration here was the needed to design for mobile first.
+3. The coding work consisted of:
+   1. Initializing the github repo.
+   2. Creating the base folder/file structure link.
+   3. Linking to any fonts/css libraries/css stylesheets as needed.
+   4. Structured the index.html based on the different elements.
+   5. Style the project working section/element by section/element.
+   6. Ensuring I checked in my code consistently.
+   7. Once the coding was complete I looked for any issues and carried any necessary adjustments.
+4. I completed the readme.me and pushed my solution live.
 
 ### Built with
 
@@ -56,59 +60,17 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- (Used Figma for the design?!)
-
-  **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-1. Perhaps use CSS variables on bigger projects.
-   
-   Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+1. Look to use CSS variables on bigger projects.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I used CSS Variables for this project. I will look to use SASS in an upcoming project.
 
 ## Author
 
 - Website - [kchettiar.com](https://www.kchettiar.com/)
 - Frontend Mentor - [@kchettiar1](https://www.frontendmentor.io/profile/kchettiar1)
 - Twitter - [@kchettiar1](https://twitter.com/kchettiar1)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
