@@ -52,7 +52,7 @@ Users should be able to:
    5. Style the project working section/element by section/element.
    6. Ensuring I checked in my code consistently.
    7. Once the coding was complete I looked for any issues and carried any necessary adjustments.
-4. I completed the readme.me and pushed my solution live.
+4. I completed the README.md and pushed my solution live.
 
 ### Built with
 
