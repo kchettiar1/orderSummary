@@ -73,4 +73,4 @@ I used CSS Variables for this project. I will look to use SASS in an upcoming pr
 
 - Website - [kchettiar.com](https://www.kchettiar.com/)
 - Frontend Mentor - [@kchettiar1](https://www.frontendmentor.io/profile/kchettiar1)
-- Twitter - [@kchettiar1](https://twitter.com/kchettiar1)
+- Twitter - [@codingkc](https://twitter.com/codingkc)
